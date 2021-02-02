@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <h1 align="center">T I M E R</h1>
+    <div class="main">
+        <div id="div-input" class="data">
+            <table align="center">
+                <tr>
+                    <th>Hours</th>
+                    <th>Minutes</th>
+                    <th>Seconds</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="" id="setHours"></td>
+                    <td><input type="text" name="" id="setMins" class="inputid"></td>
+                    <td><input type="text" name="" id="setSec"></td>
+                </tr>
+            </table>
+            <div class="set" align="center">
+                <button onclick="setT()" class="set-btn">Set</button>
+            </div>
+        </div>
+        <div class="hid" id="time" align="center">
+            <div class="headings" align="center">
+                <h1 id="hours">00</h1>
+                <h1 id="min">00</h1>
+                <h1 id="sec">00</h1>
+            </div>
+
+            <div class="ssr-btn" id="ssr-btn">
+                <button onclick="start()" id="strt-btn">Start</button>
+                <button onclick="pause()">Pause</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
